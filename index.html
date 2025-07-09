@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>MyTicketHub - Book Your Tickets</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f9f9f9;
+    }
+
+    header {
+      background-color: #007BFF;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+
+    nav {
+      margin-top: 10px;
+    }
+
+    nav a {
+      color: white;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .hero {
+      background: url('t2.jpg') no-repeat center center/cover;
+      height: 90vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      text-shadow: 1px 1px 4px black;
+      text-align: center;
+      padding: 20px;
+    }
+
+    .hero h2 {
+      font-size: 3em;
+      margin: 0;
+    }
+
+    .hero p {
+      font-size: 1.2em;
+      margin: 15px 0;
+    }
+
+    .btn {
+      background-color: #FF5722;
+      color: white;
+      padding: 12px 25px;
+      text-decoration: none;
+      font-size: 1em;
+      border-radius: 6px;
+      transition: background-color 0.3s ease;
+    }
+
+    .btn:hover {
+      background-color: #e64a19;
+    }
+
+    @media (max-width: 768px) {
+      .hero h2 {
+        font-size: 2em;
+      }
+
+      nav {
+        display: flex;
+        flex-direction: column;
+      }
+
+      nav a {
+        margin: 10px 0;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>MyTicketHub</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+      <a href="admin_login.php">Admin Login</a>
+        <a href="logout.php">Logout</a>
+      <a href="book.php">Book Tickets</a>
+      <a href="user_register.php">user_register</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h2>Book Tickets to Your Favorite Events</h2>
+    <p>Easy | Fast | Reliable</p>
+    <a href="book.php" class="btn">Book Now</a>
+  </section>
+
+</body>
+</html>

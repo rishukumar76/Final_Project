@@ -1,0 +1,152 @@
+/* General Styling */
+body {
+  font-family: 'Segoe UI', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f5f5f5;
+  color: #333;
+}
+
+/* Header */
+header {
+  background-color: #007BFF;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+nav {
+  margin-top: 10px;
+}
+
+nav a {
+  color: white;
+  margin: 0 15px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+/* Buttons */
+.btn {
+  background-color: #FF5722;
+  color: white;
+  padding: 12px 25px;
+  text-decoration: none;
+  font-size: 1em;
+  border-radius: 6px;
+  display: inline-block;
+  margin-top: 15px;
+  transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #e64a19;
+}
+
+/* Form Styling */
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+form input, form textarea, form select, form button {
+  width: 100%;
+  padding: 12px;
+  margin: 10px 0;
+  font-size: 16px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+}
+
+form button {
+  background-color: #28a745;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+form button:hover {
+  background-color: #218838;
+}
+
+/* Containers */
+.container, .form-container, .contact-container {
+  max-width: 800px;
+  margin: 40px auto;
+  background-color: white;
+  padding: 30px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+/* Tables */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+th, td {
+  padding: 12px;
+  border: 1px solid #ccc;
+  text-align: center;
+}
+
+th {
+  background-color: #007BFF;
+  color: white;
+}
+
+/* Hero Section (Home Page) */
+.hero {
+  background: url('https://images.unsplash.com/photo-1557682260-9672b3fa41d5') no-repeat center center/cover;
+  height: 90vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  text-shadow: 1px 1px 4px black;
+  text-align: center;
+  padding: 20px;
+}
+
+.hero h2 {
+  font-size: 3em;
+  margin: 0;
+}
+
+.hero p {
+  font-size: 1.2em;
+  margin: 15px 0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  nav a {
+    margin: 10px 0;
+  }
+
+  .hero h2 {
+    font-size: 2em;
+  }
+
+  .container, .form-container, .contact-container {
+    margin: 20px;
+    padding: 20px;
+  }
+
+  table, th, td {
+    font-size: 14px;
+  }
+}
